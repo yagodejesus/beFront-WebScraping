@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Escolha uma Ação</h1>
+
+    <!-- Botão para a rota de upload de arquivo (rota /sportingbet) -->
+    <a href="/sportingbet" class="button">Upload de Arquivo</a>
+
+    <!-- Botão para a rota de colar JSON (rota /upload_json) -->
+    <a href="/upload_json" class="button">Colar JSON</a>
+
+</body>
+</html>

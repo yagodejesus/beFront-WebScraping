@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Arquivo JSON</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a2030;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgb(11 38 60 );
+            padding: 40px; /* Aumentar o padding */
+            border-radius: 10px; /* Bordas mais arredondadas */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Aumentar a sombra */
+            width: 50%; /* Aumentar a largura */
+            max-width: 800px; /* Largura máxima */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px; /* Aumentar o espaçamento abaixo da imagem */
+        }
+
+        h1 {
+            font-size: 2.5em; /* Aumentar o tamanho do título */
+            margin-bottom: 30px; /* Aumentar o espaçamento abaixo do título */
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="file"] {
+            font-size: 1.2em; /* Aumentar o tamanho da fonte do input */
+            margin-bottom: 20px;
+            padding: 10px; /* Adicionar padding para aumentar o tamanho do campo */
+            color: white;
+        }
+
+        button {
+            padding: 15px 30px; /* Aumentar o tamanho do botão */
+            font-size: 1.5em; /* Aumentar o tamanho da fonte do botão */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px; /* Aumentar o arredondamento */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>beFront Scraping SportingBet</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".json">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>

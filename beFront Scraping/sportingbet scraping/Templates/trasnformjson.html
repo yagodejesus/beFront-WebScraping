@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar Texto em JSON</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0a2030;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: rgb(11 38 60 );
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: white;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #0a2030;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cole o conteúdo JSON aqui</h1>
+        <form method="POST">
+            <textarea name="json_content" rows="20" cols="100" placeholder="Cole o conteúdo do JSON aqui"></textarea><br>
+            <button type="submit">Salvar como JSON</button>
+        </form>
+    </div>
+
+</body>
+</html>
